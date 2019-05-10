@@ -1,12 +1,12 @@
 {
-    "name": "agsachdev/yii2-digitalocean-spaces",
+    "name": "agsachdev/my-digitalocean-spaces",
     "type": "yii2-extension",
     "description": "DigitalOcean Spaces component for Yii2",
     "keywords": ["yii2", "do", "digitalocean", "spaces", "yii2-spaces"],
-    "homepage": "https://github.com/agsachdev/yii2-digitalocean-spaces",
+    "homepage": "https://github.com/agsachdev/my-digitalocean-spaces",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/agsachdev/yii2-digitalocean-spaces/issues"
+        "issues": "https://github.com/agsachdev/my-digitalocean-spaces/issues"
     },
     "require": {
         "php": ">=7.0.0",
