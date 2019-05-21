@@ -6,7 +6,7 @@
     "homepage": "https://github.com/agsachdev/my-digitalocean-spaces",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/agsachdev/my-digitalocean-spaces/issues"
+        "issues": "https://github.com/agsachdev/spaces/issues"
     },
     "require": {
         "php": ">=7.0.0",
