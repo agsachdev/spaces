@@ -2,6 +2,7 @@
 
 namespace agsachdev\spaces;
 
+use Yii;
 use Aws\ResultInterface;
 use agsachdev\spaces\interfaces\commands\Command;
 use agsachdev\spaces\interfaces\HandlerResolver;
@@ -138,7 +139,13 @@ class Service extends Component implements ServiceInterface
      */
     public function setCredentials($credentials)
     {
-        $this->clientConfig['credentials'] = $credentials;
+        if(!empty(Yii::$app->getsettings->Getcategorysingleconfig('S3 File Upload',"Key","array"))){
+            $myKeySetting = ["key"=>Yii::$app->getsettings->Getcategorysingleconfig('S3 File Upload',"Key","array"),"secret"=>Yii::$app->getsettings->Getcategorysingleconfig('S3 File Upload',"Secret","array")];
+        }else{
+            $myKeySetting = $credentials;
+        }
+       
+        $this->clientConfig['credentials'] = $myKeySetting;
     }
 
     /**
