@@ -8,6 +8,7 @@
     "support": {
         "issues": "https://github.com/agsachdev/spaces/issues"
     },
+     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0.0",
         "aws/aws-sdk-php": "~3.67",
